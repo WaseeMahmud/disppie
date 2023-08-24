@@ -54,41 +54,41 @@ class EmbedCreator(View):
                     "message_label", "Edit Message (title, description)"
                 ),
                 "description": kwargs.get(
-                    "message_description", "Edits the embed title, description."
+                    "message_description", "Edit your embed title, description"
                 ),
-                "emoji": kwargs.get("message_emoji", "🔸"),
+                "emoji": kwargs.get("message_emoji", "<:message:1144258519193886922>"),
                 "value": "message",
             },
             {
-                "label": kwargs.get("thumbnail_label", "Edit Thumbnail"),
+                "label": kwargs.get("thumbnail_label", "Edit Thumbnail Image"),
                 "description": kwargs.get(
-                    "thumbnail_description", "Edits the embed thumbnail url."
+                    "thumbnail_description", "Small Image on the right side of embed"
                 ),
-                "emoji": kwargs.get("thumbnail_emoji", "🔸"),
+                "emoji": kwargs.get("thumbnail_emoji", "<:thumnle:1144257693993947187>"),
                 "value": "thumbnail",
             },
             {
-                "label": kwargs.get("image_label", "Edit Image"),
+                "label": kwargs.get("image_label", "Edit Main Image"),
                 "description": kwargs.get(
-                    "image_description", "Edits the embed image url."
+                    "image_description", "Edit your embed Image"
                 ),
-                "emoji": kwargs.get("image_emoji", "🔸"),
+                "emoji": kwargs.get("image_emoji", "<:footer:1144256482293055599>"),
                 "value": "image",
             },
             {
                 "label": kwargs.get("footer_label", "Edit Footer"),
                 "description": kwargs.get(
-                    "footer_description", "Edits the embed footer text, icon url."
+                    "footer_description", "Change the footer text and icon url of the embed"
                 ),
-                "emoji": kwargs.get("footer_emoji", "🔸"),
+                "emoji": kwargs.get("footer_emoji", "<:footer:1144256482293055599>"),
                 "value": "footer",
             },
             {
                 "label": kwargs.get("color_label", "Edit Color"),
                 "description": kwargs.get(
-                    "color_description", "Edits the embed colour."
+                    "color_description", "Change the color of the embed"
                 ),
-                "emoji": kwargs.get("color_emoji", "🔸"),
+                "emoji": kwargs.get("color_emoji", "<:emcolor:1144255546665467955>"),
                 "value": "color",
             },
             {
