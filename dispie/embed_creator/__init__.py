@@ -44,9 +44,9 @@ class EmbedCreator(View):
             {
                 "label": kwargs.get("author_label", "Edit Author"),
                 "description": kwargs.get(
-                    "author_description", "Edits the embed author name, icon."
+                    "author_description", "Edits your embed author name, icon url"
                 ),
-                "emoji": kwargs.get("author_emoji", "🔸"),
+                "emoji": kwargs.get("author_emoji", "<:icon_author:1144261194413248683>"),
                 "value": "author",
             },
             {
@@ -94,17 +94,17 @@ class EmbedCreator(View):
             {
                 "label": kwargs.get("addfield_label", "Add Field"),
                 "description": kwargs.get(
-                    "addfield_description", "Adds a field to the embed."
+                    "addfield_description", "Adds a field to your embed"
                 ),
-                "emoji": kwargs.get("addfield_emoji", "🔸"),
+                "emoji": kwargs.get("addfield_emoji", "<:media1:1123639285573238844>"),
                 "value": "addfield",
             },
             {
                 "label": kwargs.get("removefield_label", "Remove Field"),
                 "description": kwargs.get(
-                    "removefield_description", "Removes a field from the embed."
+                    "removefield_description", "Removes a field from your embed"
                 ),
-                "emoji": kwargs.get("removefield_emoji", "🔸"),
+                "emoji": kwargs.get("removefield_emoji", "<:media1:1123639285573238844>"),
                 "value": "removefield",
             },
         ]
@@ -137,16 +137,16 @@ class EmbedCreator(View):
         Returns:
             embed (discord.Embed)
         """
-        embed = Embed(title='This is title',
-                      description="Use the dropdown menu to edit my sections!", colour=Colour.blurple())
-        embed.set_author(name='Welcome to embed builder.',
-                         icon_url="https://cdn.iconscout.com/icon/premium/png-512-thumb/panel-6983404-5721235.png?")
+        embed = Embed(title='Title',
+                      description="Description", colour=0x2f3136)
+        embed.set_author(name='Welcome to VisionX embed builder.',
+                         icon_url="https://media.discordapp.net/attachments/853174868551532564/860464565338898472/embed_thumbnail.png")
         embed.set_thumbnail(
-            url="https://cdn.iconscout.com/icon/premium/png-512-thumb/panel-6983404-5721235.png?")
+            url="https://media.discordapp.net/attachments/853174868551532564/860464565338898472/embed_thumbnail.png")
         embed.set_image(
-            url="https://imageup.me/images/e44472bd-d742-4d39-8e25-b8ae762160ae.png")
+            url="https://media.discordapp.net/attachments/853174868551532564/860462053063393280/embed_image.png?width=1440&height=288")
         embed.set_footer(
-            text='Footer', icon_url="https://cdn.iconscout.com/icon/premium/png-512-thumb/panel-6983404-5721235.png?")
+            text='Footer Message', icon_url="https://media.discordapp.net/attachments/853174868551532564/860464565338898472/embed_thumbnail.png")
         return embed
 
     @select(placeholder="Edit a section")
